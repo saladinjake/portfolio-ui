@@ -1,0 +1,16 @@
+{
+  "education": [
+    {
+      "school": "MIT",
+      "degree": "BSc Computer Science",
+      "year": "2018 - 2022"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tech Inc.",
+      "role": "Frontend Developer",
+      "duration": "2022 - Present"
+    }
+  ]
+}

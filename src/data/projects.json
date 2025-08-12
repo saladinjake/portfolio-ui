@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Ecommerce",
+    "description": "An Ecommerce application for frontend.",
+    "tech": ["Vue", "Tailwind", "Node.js"],
+    "thumbnail": "Ecommerce.png",
+    "gallery": ["1.png", "2.png"],
+    "details": "Detailed description goes here..."
+  }
+]
