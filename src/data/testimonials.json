@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Sarah Johnson",
+    "role": "Product Manager at TechCorp",
+    "photo": "/images/sarah.jpg",
+    "quote": "Working with Jane was a game-changer. Her Vue.js skills took our product to the next level!"
+  },
+  {
+    "name": "David Lee",
+    "role": "Lead Developer at DevStudio",
+    "photo": "/images/david.jpg",
+    "quote": "Clean code, great communication, and serious frontend talent."
+  },
+  {
+    "name": "Amira Patel",
+    "role": "Freelance Designer",
+    "photo": "/images/amira.jpg",
+    "quote": "Jane is a powerhouse! Super creative and reliable."
+  }
+]

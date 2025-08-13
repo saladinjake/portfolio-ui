@@ -1,11 +1,29 @@
 [
   {
-    "id": 1,
-    "title": "Ecommerce",
-    "description": "An Ecommerce application for frontend.",
-    "tech": ["Vue", "Tailwind", "Node.js"],
-    "thumbnail": "Ecommerce.png",
-    "gallery": ["1.png", "2.png"],
-    "details": "Detailed description goes here..."
+    "id": "1",
+    "title": "AI Portfolio Builder",
+    "description": "An AI-powered portfolio builder with drag & drop interface.",
+    "thumbnail": "/images/ai-portfolio.png",
+    "tech": ["Vue", "Tailwind", "Node"],
+    "details": "Full detailed info about the project...",
+    "gallery": ["/images/p1.png", "/images/p2.png"]
+  },
+  {
+    "id": "2",
+    "title": "E-Commerce Platform",
+    "description": "Multi-vendor e-commerce solution with payments.",
+    "thumbnail": "/images/ecom.png",
+    "tech": ["Vue", "Express", "MongoDB"],
+    "details": "Detailed explanation...",
+    "gallery": ["/images/e1.png"]
+  },
+  {
+    "id": "3",
+    "title": "Figma to Code Converter",
+    "description": "Convert Figma designs to production-ready Vue code.",
+    "thumbnail": "/images/figma-code.png",
+    "tech": ["Figma", "Vue", "GSAP"],
+    "details": "Detailed info...",
+    "gallery": ["/images/f1.png"]
   }
 ]
