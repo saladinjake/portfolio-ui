@@ -1,0 +1,62 @@
+[
+  { "label": "Home", "to": "/" },
+
+  {
+    "label": "Projects",
+    "children": [
+      { "label": "All Projects", "to": "/projects" },
+      {
+        "label": "By Stack",
+        "children": [
+          { "label": "Vue.js", "to": "/projects/vue" },
+          { "label": "Node.js", "to": "/projects/node" },
+          { "label": "Full-Stack", "to": "/projects/fullstack" }
+        ]
+      },
+      { "label": "Featured", "to": "/projects/featured" }
+    ]
+  },
+
+  {
+    "label": "Services",
+    "children": [
+      {
+        "label": "Frontend",
+        "children": [
+          { "label": "Vue + Nuxt Apps", "to": "/services/vue" },
+          { "label": "Design Systems", "to": "/services/design-systems" },
+          { "label": "Animations / GSAP", "to": "/services/gsap" }
+        ]
+      },
+      {
+        "label": "Backend",
+        "children": [
+          { "label": "Node APIs", "to": "/services/node" },
+          { "label": "Auth & Security", "to": "/services/auth" },
+          { "label": "Payments", "to": "/services/payments" }
+        ]
+      }
+    ]
+  },
+
+  { "label": "About", "to": "/about" },
+  { "label": "Contact", "to": "/contact", "badge": "Hire me" }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

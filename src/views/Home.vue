@@ -2,6 +2,7 @@
 
 
 <template>
+<Header/>
   <HeroSection />
   <SkillsSection />
   <div class="container mt-10">
@@ -65,6 +66,7 @@
 
 
 <script setup>
+import Header from "../components/Header/index.vue"
 import projects from '../data/projects.json'
 import HeroSection from '../components/HeroSection.vue'
 import ProjectCard from '../components/ProjectCard.vue'

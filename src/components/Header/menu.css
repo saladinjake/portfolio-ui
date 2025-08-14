@@ -1,0 +1,71 @@
+/* ---- layout & spacing  ---- */
+.flex{display:flex}.items-center{align-items:center}
+.justify-between{justify-content:space-between}
+.justify-center{justify-content:center}
+
+.flex-col{flex-direction:column}
+.gap-2{gap:.5rem}
+.gap-3{gap:.75rem}
+.gap-4{gap:1rem}
+.gap-6{gap:1.5rem}
+.p-2{padding:.5rem}
+.p-3{padding:.75rem}
+.p-4{padding:1rem}
+.px-4{padding:1rem}
+.py-2{padding:.5rem}
+.mt-2{margin-top:.5rem}
+.mt-3{margin-top:.75rem}
+.mt-4{margin-top:1rem}
+.mb-2{margin-bottom:.5rem}
+.text-sm{font-size:.875rem}
+.text-lg{font-size:1.125rem}
+.text-xl{font-size:1.25rem}
+.font-bold{font-weight:700}
+.font-medium{font-weight:500}
+.w-full{width:100%}
+
+.h-full{height:100%}
+.hidden{display:none}
+@media(min-width:1024px){.lg\\:flex{display:flex}.lg\\:hidden{display:none}}
+.cursor-pointer{cursor:pointer}
+.rounded{border-radius:.5rem}
+.rounded-full{border-radius:9999px}
+.border{border:1px solid rgba(0,0,0,.08)}
+.shadow{box-shadow:0 10px 25px rgba(0,0,0,.12)}
+.text-gray-700{color:#374151}.bg-white{background:#fff}
+
+/* ---- header ---- */
+.navbar{position:sticky;top:0;background:#fff;z-index:50;border-bottom:1px solid rgba(0,0,0,.06)}
+.nav-link{padding:.6rem .9rem;border-radius:.5rem;transition:background-color .2s}
+.nav-link:hover{background:rgba(56,189,248,.12)}
+.badge{background:var(--accent);color:#fff;border-radius:9999px;padding:.1rem .45rem;margin-left:.45rem;font-size:.7rem}
+
+/* ---- desktop dropdown bubble ---- */
+.dropdown-wrap{position:absolute;top:100%;left:0;transform-origin:top;opacity:0;pointer-events:none;transform:translateY(8px) scale(.98);transition:opacity .16s,transform .16s}
+.dropdown-wrap.open{opacity:1;pointer-events:auto;transform:translateY(0) scale(1)}
+.dropdown{position:relative;background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:.75rem;padding:.75rem;min-width:320px;max-width:560px;box-shadow:0 14px 34px rgba(0,0,0,.14)}
+.tooltip-edge{position:absolute;top:-8px;left:24px;width:16px;height:16px;background:#fff;transform:rotate(45deg);border-left:1px solid rgba(0,0,0,.06);border-top:1px solid rgba(0,0,0,.06)}
+
+/* dropdown inner transitions (forward/back redraw) */
+.panel{position:relative;min-height:160px}
+.slide-in-right{animation:slideInRight .18s ease both}
+.slide-out-left{animation:slideOutLeft .18s ease both}
+.slide-in-left{animation:slideInLeft .18s ease both}
+.slide-out-right{animation:slideOutRight .18s ease both}
+@keyframes slideInRight{from{transform:translateX(16%);opacity:.2}to{transform:translateX(0);opacity:1}}
+@keyframes slideOutLeft{from{transform:translateX(0);opacity:1}to{transform:translateX(-16%);opacity:0}}
+@keyframes slideInLeft{from{transform:translateX(-16%);opacity:.2}to{transform:translateX(0);opacity:1}}
+@keyframes slideOutRight{from{transform:translateX(0);opacity:1}to{transform:translateX(16%);opacity:0}}
+
+/* ---- persistent overlay (desktop) ---- */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(1px);z-index:45;opacity:0;pointer-events:none;transition:opacity .15s}
+.overlay.open{opacity:1;pointer-events:auto}
+
+/* ---- mobile drawer ---- */
+.drawer{position:fixed;top:0;left:0;width:100%;max-width:420px;height:100%;background:#fff;z-index:60;transform:translateX(-100%);transition:transform .25s ease}
+.drawer.open{transform:translateX(0)}
+.drawer-header{display:flex;align-items:center;justify-content:space-between;padding:1rem;border-bottom:1px solid rgba(0,0,0,.06)}
+.drawer-body{position:relative;overflow:hidden;height:calc(100% - 58px)}
+.level{position:absolute;inset:0;overflow:auto;padding:1rem}
+
+/* reuse slide animations for drawer stack */

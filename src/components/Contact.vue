@@ -32,7 +32,7 @@ const form = ref({
 
 const handleSubmit = () => {
   alert(`Message Sent!\nName: ${form.value.name}\nEmail: ${form.value.email}`)
-  // Optionally integrate EmailJS/Formspree for real email sending
+  //Todo: Optionally integrate EmailJS/Formspree for real email sending
   form.value = { name: '', email: '', message: '' }
 }
 </script>
