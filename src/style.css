@@ -2,7 +2,7 @@
 :root {
   --primary: #0f172a;
   --accent: #38bdf8;
-  --bg: #f1f5f9;
+   --bg: #fafafa;
   --text: #1e293b;
   --radius: 0.75rem;
 }
@@ -10,7 +10,7 @@
 [data-theme='dark'] {
   --primary: #f8fafc;
   --accent: #60a5fa;
-  --bg: #0f172a;
+  --bg: #fafafa;
   --text: #f1f5f9;
 }
 
