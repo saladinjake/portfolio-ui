@@ -14,7 +14,7 @@
             <button
               v-for="t in tags"
               :key="t"
-              class="tag"
+              class="tag bg-white"
               :class="t === activeTag ? 'tag--active' : ''"
               @click="setTag(t)"
             >
@@ -141,10 +141,10 @@ onMounted(() => {
 }
 .tag{
   white-space:nowrap;
-  padding:.45rem .8rem;border-radius:9999px;background:#f3f4f6;color:#111;font-weight:600;font-size:.85rem;transition:background .15s
+  padding:.45rem .8rem;border-radius:9999px;background:#f3f4f6;color:#40196d;font-weight:600;font-size:.85rem;transition:background .15s
 }
 .tag:hover{background:#e5e7eb}
-.tag--active{background:#111;color:#fff}
+.tag--active{background:#111;color:#40196d}
 
 /* hide scrollbar (webkit + firefox) */
 .no-scrollbar{scrollbar-width:none}
@@ -152,8 +152,8 @@ onMounted(() => {
 
 /* arrow buttons */
 .circle-btn{
-  position:absolute;top:50%;transform:translateY(-50%);
-  width:36px;height:36px;border-radius:9999px;background:#111;color:#fff;display:flex;align-items:center;justify-content:center;
+  position:absolute;top:10%;transform:translateY(-10%);
+  width:36px;height:36px;border-radius:9999px;background:#40196d;color:#fff;display:flex;align-items:center;justify-content:center;
   z-index:5;box-shadow:0 6px 14px rgba(0,0,0,.2)
 }
 .circle-btn.left{left:-.75rem}

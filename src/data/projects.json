@@ -21,7 +21,7 @@
     "desc": "REST API with JWT + Prisma.",
     "image": "/assets/mock-3.jpg",
     "url": "https://example.com/node-api",
-    "tags": ["All", "Node", "Backend"]
+    "tags": ["All", "Node", "Backend","Block Chain", "Azure", "Aws"]
   },
   {
     "id": 4,
