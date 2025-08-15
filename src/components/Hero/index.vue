@@ -1,0 +1,60 @@
+<template>
+  <section class="relative w-full min-h flex items- bg-white overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+   
+     <!-- Particles as divs -->
+     <SlimeIntro/>
+
+    <div class="container mx-auto px-6 relative z-10 grid grid-cols-2 md:grid-cols-2 gap-8 items-center">
+      
+      <!-- Left Text Column -->
+      <div class="space-y-6">
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+          I"m  <span class="text-primary">Victor Juwa</span> a Frontend Developer
+        </h1>
+        <p class="text-lg text-gray-300 max-w-md">
+          crafting high-quality web experiences with animations, responsiveness, and pixel-perfect designs is my niche.
+        </p>
+        <button class="btn-primary px-6 py-3">My Info</button>
+      </div>
+
+      <!-- Right Animated Placeholders -->
+      <div class="relative  h-[400px] md:h-[500px]">
+        <div class="img-placeholder floating-1 absolute top-10 left-12 w-32 md:w-48 h-40 md:h-56"></div>
+        <div class="img-placeholder floating-2 absolute bottom-20 right-12 w-40 md:w-56 h-48 md:h-64"></div>
+        <div class="img-placeholder floating-3 absolute top-1/2 left-1/3 w-36 md:w-52 h-44 md:h-60"></div>
+      </div>
+
+    </div>
+  </section>
+</template>
+
+<script setup>
+import "./hero.css"
+import { onMounted, ref } from "vue";
+import SlimeIntro from "./Splat.vue"
+const particlesCanvas = ref(null);
+
+
+// Randomized particle style for position and animation speed
+const particlesCount = 15;
+
+function particleStyle(n) {
+  const size = Math.random() * 40 + 40; // 40px - 80px
+  const top = Math.random() * 100;
+  const left = Math.random() * 100;
+  const duration = Math.random() * 6 + 6; // 6s - 12s
+  const delay = Math.random() * 5; // stagger start
+  const colors = ["#ff6b00", "#ff9f1c", "#39ff14"];
+  return {
+    width: `${size}px`,
+    height: `${size}px`,
+    top: `${top}%`,
+    left: `${left}%`,
+    backgroundColor: colors[Math.floor(Math.random() * colors.length)],
+    animation: `blobFloat ${duration}s ease-in-out ${delay}s infinite`,
+  };
+}
+onMounted(() => {
+
+});
+</script>

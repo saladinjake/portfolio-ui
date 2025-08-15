@@ -103,7 +103,7 @@ const openFor = (item, triggerEl) => {
   isOpen.value = true
   // position bubble under trigger
   const rect = triggerEl.getBoundingClientRect()
-  bubbleStyle.value = { left: rect.left + 'px', "z-index":9999 }
+  bubbleStyle.value = { left: rect.left + 'px',  }
 }
 
 const onHover = (item, evt) => {

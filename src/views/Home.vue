@@ -68,7 +68,7 @@
 <script setup>
 import Header from "../components/Header/index.vue"
 import projects from '../data/projects.json'
-import HeroSection from '../components/HeroSection.vue'
+import HeroSection from '../components/Hero/index.vue'
 import ProjectCard from '../components/ProjectCard.vue'
 import ResumeSection from '../components/ResumeSection.vue'
 import TestimonialSection from "../components/TestimonialSection.vue"

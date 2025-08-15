@@ -3,10 +3,10 @@
     <div class="container flex items-center justify-between">
       <router-link to="/" class="nav-link font-bold text-xl">MyPortfolio</router-link>
 
-  
-      <DesktopMenu :menu="menu" ref="desk" class="sm:hidden flex" />
+      <!-- Desktop horizontal -->
+      <DesktopMenu :menu="menu" ref="desk" class="sm:hidden lg:flex" />
 
-  
+      <!-- Right actions (desktop) -->
       <div class="sm:hidden lg:flex items-center gap-3">
         <router-link to="/contact" class="nav-link border">Contact</router-link>
       </div>
