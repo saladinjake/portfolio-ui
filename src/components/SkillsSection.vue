@@ -37,7 +37,7 @@
           </span>
         </div>
         <!-- Skill Name -->
-        <h3 class="text-lg font-semibold">{{ skill.name }}</h3>
+        <h3 class="text-lg font-semibold text-primary">{{ skill.name }}</h3>
       </div>
     </div>
   </section>

@@ -8,11 +8,15 @@
       
       <!-- Left Text Column -->
       <div class="space-y-6">
-        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
-          I"m  <span class="text-primary">Victor Juwa</span> a Frontend Developer
+        <h1 class="text-4xl md:text-4xl font-bold leading-tight">
+          Hi I"m  <span class="text-primary">Victor Juwa.</span> A Frontend Developer
         </h1>
+          <h1 class="text-2xl md:text-2xl font-bold leading-tight">
+          <span class="text-primary">{{ displayText }}</span><span class="caret">|</span>
+        </h1>
+
         <p class="text-lg text-gray-300 max-w-md">
-          crafting high-quality web experiences with animations, responsiveness, and pixel-perfect designs is my niche.
+         <span class="">Crafting high-quality web experiences with animations, responsiveness, and pixel-perfect designs is my niche</span><span class="caret">|</span>
         </p>
         <button class="btn-primary px-6 py-3">My Info</button>
       </div>
@@ -35,6 +39,48 @@ import SlimeIntro from "./Splat.vue"
 const particlesCanvas = ref(null);
 
 
+/* Typing Animation */
+const texts = [
+  "Keen on user essenticity on product delivery",
+  "Building aesthetic design using uptodate frontend technologies",
+  " crafting high-quality web experiences with animations, responsiveness, and pixel-perfect designs is my niche.",
+  "Vue.js is my playground 🎯",
+   "React  is my go to mvp frontend library 🎯",
+   "Skilled with Angular framework, Next js",
+   "For backend technologies I aso thrive in Node js/Express framwork as well as Php /Laravel"
+]
+
+const displayText = ref("")
+let textIndex = 0
+let charIndex = 0
+let isDeleting = false
+const typingSpeed = 80
+const deletingSpeed = 50
+const pauseTime = 1500
+
+const typeLoop = () => {
+  const currentText = texts[textIndex]
+  if (!isDeleting) {
+    displayText.value = currentText.substring(0, charIndex + 1)
+    charIndex++
+    if (charIndex === currentText.length) {
+      isDeleting = true
+      return setTimeout(typeLoop, pauseTime)
+    }
+  } else {
+    displayText.value = currentText.substring(0, charIndex - 1)
+    charIndex--
+    if (charIndex === 0) {
+      isDeleting = false
+      textIndex = (textIndex + 1) % texts.length
+    }
+  }
+  setTimeout(typeLoop, isDeleting ? deletingSpeed : typingSpeed)
+}
+
+
+
+
 // Randomized particle style for position and animation speed
 const particlesCount = 15;
 
@@ -55,6 +101,7 @@ function particleStyle(n) {
   };
 }
 onMounted(() => {
-
-});
+  typeLoop()
+  
+})
 </script>

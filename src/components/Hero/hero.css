@@ -68,24 +68,24 @@
 
 /* Button */
 .btn-primary {
-  background-color: #ff6b00;
+  background-color: #40196d;
   color: white;
   border-radius: 0.5rem;
   font-weight: 600;
   transition: background-color 0.3s ease;
 }
 .btn-primary:hover {
-  background-color: #e85a00;
+  background-color: #40196d;
 }
 .text-primary {
-  color: #ff6b00;
+  color: #40186d;
 }
 /* Positioning utilities */
 .relative { position: relative; }
 .absolute { position: absolute; }
 
 .min-h{
-    height: 60vh
+    height: 70vh
 }
 
 
@@ -132,6 +132,30 @@
 
 
 
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-muted { color: var(--text-muted); }
+.text-white { color: white; }
+.text-xs { font-size: 0.75rem; }
+.text-md { font-size: 1.25rem; }
+.text-sm { font-size: 0.875rem; }
+.text-2xl { font-size: var(--text-2xl); }
+.text-3xl { font-size: var(--text-3xl); }
+.text-4xl { font-size: var(--text-4xl); }
+.text-5xl { font-size: var(--text-5xl); }
+.text-xl { font-size: var(--text-xl); }
+.text-lg { font-size: var(--text-lg); }
+.font-bold { font-weight: var(--font-bold); }
+.font-extrabold { font-weight: var(--font-extrabold); }
+.font-semibold { font-weight: 600; }
+.font-thin   { font-weight: 100; }
+.font-normal { font-weight: 400; }
+.font-bold   { font-weight: 700; }
+.text-primary { color: var(--color-primary); }
+.text-white { color: var(--color-white); }
+.text-gray-700 { color: var(--color-gray-700); }
+.text-gray-600 { color: var(--color-gray-600); }
+.text-gray-900 { color: var(--color-gray-900); }
 
 
 

@@ -1,7 +1,11 @@
 [
   {
+    "name": "React",
+    "level": 97
+  },
+  {
     "name": "Vue.js",
-    "level": 90
+    "level": 93
   },
   {
     "name": "Tailwind CSS",
@@ -9,11 +13,11 @@
   },
   {
     "name": "JavaScript",
-    "level": 88
+    "level": 94
   },
   {
     "name": "Node.js",
-    "level": 75
+    "level": 80
   },
   {
     "name": "Figma",
