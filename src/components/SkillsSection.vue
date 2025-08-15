@@ -24,7 +24,7 @@
               cx="64"
               cy="64"
               r="58"
-              stroke="#3b82f6"
+              stroke="#f8f8f8"
               stroke-width="12"
               fill="transparent"
               stroke-linecap="round"

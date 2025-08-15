@@ -151,7 +151,7 @@
 .font-thin   { font-weight: 100; }
 .font-normal { font-weight: 400; }
 .font-bold   { font-weight: 700; }
-.text-primary { color: var(--color-primary); }
+
 .text-white { color: var(--color-white); }
 .text-gray-700 { color: var(--color-gray-700); }
 .text-gray-600 { color: var(--color-gray-600); }

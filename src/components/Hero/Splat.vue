@@ -20,7 +20,7 @@
 export default {
   data() {
     return {
-      palette: ["#fafafa", "#f8f8f8", "#f6f6f6"], // Nickelodeon slime colors
+      palette: ["#40196d", "#f8f8f8", "#f6f6f6"], // Nickelodeon slime colors
       blobs: []
     };
   },

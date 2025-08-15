@@ -41,13 +41,14 @@ const particlesCanvas = ref(null);
 
 /* Typing Animation */
 const texts = [
-  "Keen on user essenticity on product delivery",
-  "Building aesthetic design using uptodate frontend technologies",
-  " crafting high-quality web experiences with animations, responsiveness, and pixel-perfect designs is my niche.",
+  "I am keen on user eccentricity during product delivery",
+  "Building aesthetic design using up-to date frontend technologies",
+  " Crafting high-quality web experiences with animations, responsiveness, and pixel-perfect designs is my niche.",
   "Vue.js is my playground 🎯",
    "React  is my go to mvp frontend library 🎯",
-   "Skilled with Angular framework, Next js",
-   "For backend technologies I aso thrive in Node js/Express framwork as well as Php /Laravel"
+   "I also build wit Angular & Next js Fraeworks",
+   "For backend technologies still in my learning phase; ",
+   "I also thrive in Node js/Express framework as well as Php /Laravel"
 ]
 
 const displayText = ref("")
