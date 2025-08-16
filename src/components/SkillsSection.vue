@@ -1,7 +1,8 @@
 <template>
+<div style="background:#fafafa" class="mb-12 px-4 mx-4 p-8">
   <section class="container py-16" >
     <h2 class="text-3xl font-bold text-center mb-12">My Skills</h2>
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-8  grid-cols-1  md:grid-cols-3">
       <div
         v-for="(skill, index) in skills"
         :key="skill.name"
@@ -41,6 +42,7 @@
       </div>
     </div>
   </section>
+  </div>
 </template>
 
 <script setup>

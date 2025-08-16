@@ -4,10 +4,10 @@
       <router-link to="/" class="nav-link font-bold text-xl">MyPortfolio</router-link>
 
       <!-- Desktop horizontal -->
-      <DesktopMenu :menu="menu" ref="desk" class="sm:hidden lg:flex" />
+      <DesktopMenu :menu="menu" ref="desk" class="sm:hidden md:flex" />
 
       <!-- Right actions (desktop) -->
-      <div class="sm:hidden lg:flex items-center gap-3">
+      <div class="invisible md:visible items-center gap-3">
         <router-link to="/contact" class="nav-link border">Contact</router-link>
       </div>
 

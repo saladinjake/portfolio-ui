@@ -1,10 +1,10 @@
 <template>
-  <div class="sm:hidden flex items-center gap-2 relative">
+  <div class="md:flex invisible md:visible  items-center gap-2 relative ">
     <!-- top-level triggers -->
     <ul
       v-for="(item, i) in menu"
       :key="i"
-      class="relative"
+      class="relative p-3 mb-2"
       @mouseenter="onHover(item, $event)"
     >
       <li

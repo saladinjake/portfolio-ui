@@ -60,6 +60,6 @@ defineProps({
 .eye-btn { transition: transform .15s ease; }
 .eye-btn:hover { transform: scale(1.06); }
 .btn-primary {
-  background:#2563eb;color:#fff;padding:.5rem .9rem;border-radius:.5rem;font-weight:600
+  background:#40196d;color:#fff;padding:.5rem .9rem;border-radius:.5rem;font-weight:600
 }
 </style>

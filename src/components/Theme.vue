@@ -1,6 +1,6 @@
 <template>
   <button class="btn fixed top-4 right-4" @click="toggleTheme">
-    {{ theme === 'dark' ? ' Light' : ' Dark' }}
+    {{ theme === 'dark' ? 'Light' : ' Dark' }}
   </button>
 </template>
 

@@ -6,6 +6,7 @@
   <HeroSection />
   <SkillsSection />
   <ProjectSection/>
+  <SlideShow/>
 
 
 
@@ -24,7 +25,7 @@ import HeroSection from '../components/Hero/index.vue'
 import ProjectSection from '../components/Projects/index.vue'
 import ResumeSection from '../components/ResumeSection.vue'
 import TestimonialSection from "../components/TestimonialSection.vue"
-
+import SlideShow from "../components/SlideShow.vue"
 import SkillsSection from '../components/SkillsSection.vue'
 import { ref, computed } from 'vue'
 

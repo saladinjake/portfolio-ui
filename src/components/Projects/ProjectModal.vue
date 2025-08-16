@@ -22,14 +22,15 @@
 
 <script setup>
 defineProps({
-  open: { type: Boolean, default: false },
+  open: { type: Boolean, default: true },
   project: { type: Object, default: null }
 })
+console.log(open,"<<<")
 </script>
 
 <style scoped>
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:90;display:flex;align-items:center;justify-content:center}
-.modal{z-index:95}
+.modal{z-index:99995}
 .close-btn{position:absolute;top:.5rem;right:.5rem;width:36px;height:36px;border-radius:9999px;background:rgba(0,0,0,.6);color:#fff}
 .fade-enter-active,.fade-leave-active{transition:opacity .18s}
 .fade-enter-from,.fade-leave-to{opacity:0}

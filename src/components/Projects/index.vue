@@ -80,10 +80,6 @@
     </div>
 
 
-
-
-
-
     <!-- Modal -->
     <ProjectModal :open="modalOpen" :project="activeProject" @close="modalOpen = false" />
   </section>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "category": "Web Development",
+    "image": "/images/project1.jpg",
+    "url": "https://example.com/project1"
+  },
+  {
+    "id": 2,
+    "title": "E-commerce App",
+    "category": "Mobile App",
+    "image": "/images/project2.jpg",
+    "url": "https://example.com/project2"
+  },
+
+
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "category": "Web Development",
+    "image": "/images/project1.jpg",
+    "url": "https://example.com/project1"
+  },
+  {
+    "id": 2,
+    "title": "E-commerce App",
+    "category": "Mobile App",
+    "image": "/images/project2.jpg",
+    "url": "https://example.com/project2"
+  },
+
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "category": "Web Development",
+    "image": "/images/project1.jpg",
+    "url": "https://example.com/project1"
+  },
+  {
+    "id": 2,
+    "title": "E-commerce App",
+    "category": "Mobile App",
+    "image": "/images/project2.jpg",
+    "url": "https://example.com/project2"
+  },
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "category": "Web Development",
+    "image": "/images/project1.jpg",
+    "url": "https://example.com/project1"
+  },
+  {
+    "id": 2,
+    "title": "E-commerce App",
+    "category": "Mobile App",
+    "image": "/images/project2.jpg",
+    "url": "https://example.com/project2"
+  }
+
+]
