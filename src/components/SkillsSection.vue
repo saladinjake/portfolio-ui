@@ -1,7 +1,7 @@
 <template>
 <div style="background:#fafafa" class="mb-12 px-4 mx-4 p-8">
   <section class="container py-16" >
-    <h2 class="text-3xl font-bold text-center mb-12">My Skills</h2>
+    <h2 class="text-4xl font-bold text-center mb-12">Frontend + Backend Skills</h2>
     <div class="grid gap-8  grid-cols-1  md:grid-cols-3">
       <div
         v-for="(skill, index) in skills"
@@ -17,7 +17,7 @@
               cx="64"
               cy="64"
               r="58"
-              stroke="#e5e7eb"
+              stroke="#eafa8a"
               stroke-width="12"
               fill="transparent"
             />
@@ -25,7 +25,7 @@
               cx="64"
               cy="64"
               r="58"
-              stroke="#eafa8e"
+              stroke="#e6e6e6"
               stroke-width="12"
               fill="transparent"
               stroke-linecap="round"

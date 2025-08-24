@@ -1,9 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Portfolio Website",
-    "category": "Web Development",
+    "title": "Vue-Portfolio Website",
+    "category": "Frontend Design",
     "image": "/images/project1.jpg",
+    "tags":["Vue","css", "Pinia"],
+    "description": "",
+
     "url": "https://example.com/project1"
   },
   {

@@ -1,6 +1,7 @@
 <template>
   <section class="bg-light p-6">
     <div class="max-w-6xl mx-auto">
+       <h2 class="text-4xl font-bold">Frontend UI's</h2>
       <!-- Carousel Container -->
       <div class="relative overflow-hidden">
         
@@ -16,9 +17,10 @@
 
            
           >
-            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition overflow-hidden min-w-33 md:min-w-25 p-4"   >
-             <div class="img-placeholder" ></div>
-              <!--<img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />-->
+            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition overflow-hidden min-w-33 md:min-w-25 "
+            >
+             <div v-if="!project.image.includes('https')" class="img-placeholder" ></div>
+              <img v-if="project.image" :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />
               <div class="p-4">
                 <h3 class="font-bold text-lg mb-1">{{ project.title }}</h3>
                 <p class="text-sm text-gray-500">{{ project.category }}</p>
@@ -106,8 +108,8 @@ export default {
 
 <style scoped>
 .bg-light { background-color: #f9fafb; }
-.bg-primary { background-color: #3b82f6; }
-.bg-primary-dark { background-color: #2563eb; }
+.bg-primary { background-color:rgb(50, 9, 72); }
+.bg-primary-dark { background-color: rgb(56, 9, 72); }
 .text-white { color: #fff; }
 .text-gray-500 { color: #6b7280; }
 .shadow-lg { box-shadow: 0 10px 15px rgba(0,0,0,0.1); }

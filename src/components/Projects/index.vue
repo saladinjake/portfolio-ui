@@ -3,7 +3,7 @@
     <div class="">
       <!-- LEFT COLUMN: Tag rail + view switcher -->
       <div class="flex flex-col gap-5 grid gap-8 grid-cols-2">
-        <h2 class="text-2xl font-bold">Projects</h2>
+        <h2 class="text-4xl font-bold">Projects</h2>
 
         <!-- Horizontal tag scroller -->
         <div class="relative">
@@ -81,7 +81,8 @@
 
 
     <!-- Modal -->
-    <ProjectModal :open="modalOpen" :project="activeProject" @close="modalOpen = false" />
+    <ProjectModal :isOpen="modalOpen" :project="activeProject" @close="modalOpen = false" />
+    
   </section>
 </template>
 

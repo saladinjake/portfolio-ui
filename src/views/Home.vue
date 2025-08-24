@@ -2,7 +2,7 @@
 <template>
 <Header/>
   <HeroSection />
-  <SkillsSection />
+  <SkillsSectionGrid />
    <SlideShow/>
   <ProjectSection/>
   <TestimonialSection/>
@@ -18,6 +18,7 @@ import ProjectSection from '../components/Projects/index.vue'
 import ResumeSection from '../components/ResumeSection.vue'
 import TestimonialSection from "../components/TestimonialSection.vue"
 import SlideShow from "../components/SlideShow.vue"
+import SkillsSectionGrid from '../components/SkillSectionGrid.vue'
 import SkillsSection from '../components/SkillsSection.vue'
 import Footer from "../components/Footer.vue"
 import { ref, computed } from 'vue'

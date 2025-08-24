@@ -1,5 +1,5 @@
 <template>
-  <section style="background: #eafe7a" class="relative w-full min-h flex items- bg-black overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+  <section style="background: #e6e6e6" class="relative w-full min-h flex items- bg-black overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 text-white">
    
      <!-- Particles as divs -->
      <SlimeIntro/>

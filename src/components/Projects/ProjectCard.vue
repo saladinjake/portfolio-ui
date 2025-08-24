@@ -5,19 +5,9 @@
   >
     <!-- Media -->
     <div class="media relative">
-      <div class="img-placeholder" ></div>  
-       <!--  <img :src="project.image" :alt="project.title" class="w-full h-full object-cover img-placeholder" />-->
-      <button
-        class="eye-btn absolute bottom-2 right-2 rounded-full bg-black/70 text-white w-10 h-10 flex items-center justify-center"
-        @click.stop="$emit('preview', project)"
-        aria-label="Preview project"
-        title="Preview"
-      >
-        <!-- Eye Icon -->
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-          <path d="M12 5c-6.5 0-10 7-10 7s3.5 7 10 7 10-7 10-7-3.5-7-10-7Zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-2.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
-        </svg>
-      </button>
+       <div v-if="!project.image.includes('https')" class="img-placeholder" ></div>
+           <img v-if="project.image.includes('https')"  :src="project.image" :alt="project.title" class="w-full h-full object-cover img-placeholder" />
+    
     </div>
 
     <!-- Body -->
@@ -35,13 +25,25 @@
       </div>
 
       <!-- Footer -->
-      <div class="mt-3">
+      <div class="mt-3 flex flex-row justify-between gap-8">
         <a
           class="btn-primary inline-block"
           :href="project.url"
           target="_blank"
           rel="noopener"
         >Live Preview</a>
+
+          <button
+        class="rounded-full bg-black/70 text-white w-10 h-10 flex items-center justify-center"
+        @click.stop="$emit('preview', project)"
+        aria-label="Preview project"
+        title="Preview"
+      >
+        <!-- Eye Icon -->
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M12 5c-6.5 0-10 7-10 7s3.5 7 10 7 10-7 10-7-3.5-7-10-7Zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-2.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+        </svg>
+      </button>
       </div>
     </div>
   </div>
@@ -65,16 +67,11 @@ defineProps({
 }
 
 .img-placeholder {
-  background: linear-gradient(135deg, #4b5563, #6b7280); /* Gray gradient */
+  background: linear-gradient(135deg,#4b5563, #6b7280); /* Gray gradient */
   border-radius: 0.5rem;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   position: relative;
-  
-
-  width:100%;
+   width:100%;
   height: 200px
 }
-
-/* Shimmer Effect */
-
 </style>
