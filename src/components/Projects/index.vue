@@ -6,7 +6,7 @@
         <h2 class="text-4xl font-bold">Projects</h2>
 
         <!-- Horizontal tag scroller -->
-        <div class="relative">
+        <div class="relative   md:inline-block invisible md:visible ">
           <!-- Left arrow -->
           <button class="circle-btn left" @click="scrollTags(-1)" aria-label="Scroll tags left">‹</button>
 

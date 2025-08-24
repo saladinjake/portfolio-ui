@@ -1,5 +1,5 @@
 <template>
-  <div class="md:hidden">
+  <div class="md:hidden p-3 m-3">
     <button class="nav-link" @click="open = true" aria-label="Open Menu">☰</button>
 
     <div class="drawer" :class="{ open }" v-show="hydrated" role="dialog" aria-modal="true">

@@ -23,7 +23,7 @@
 
       <!-- Right Animated Placeholders -->
       <div class="relative  h-[400px] md:h-[500px]">
-        <div class="img-placeholder floating-1 absolute top-10 left-12 w-32 md:w-48 h-40 md:h-56"></div>
+        <img src="/1752013400462.jpg" class="img-placeholder floating-1 absolute top-10 left-12 w-32 md:w-48 h-40 md:h-56"/>
         <div class="img-placeholder floating-2 absolute bottom-20 right-12 w-40 md:w-56 h-48 md:h-64"></div>
         <div class="img-placeholder floating-3 absolute top-1/2 left-1/3 w-36 md:w-52 h-44 md:h-60"></div>
       </div>

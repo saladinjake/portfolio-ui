@@ -520,7 +520,7 @@ li{list-style: none;}
 
 
  
-
+.inline-block{display: inline-block}
 
 .min-w-80{
    width:80% 
@@ -557,10 +557,10 @@ li{list-style: none;}
   .md\:w-full{ width: 100%}
   .md\:mx-auto { margin-left: auto; margin-right: auto; }
   
-   .md\visible { visibility: visible; }
-.md\invisible { visibility: hidden; }
+   .md\:visible { visibility: visible; }
+.md\:invisible { visibility: hidden; }
 
-
+.md\:inline-block{display: inline-block}
   .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
   /* .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); } */
   .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
