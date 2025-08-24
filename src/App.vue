@@ -5,7 +5,7 @@ import ThemeToggle from './components/Theme.vue'
 
 
 <template>
-  <HelloWorld  />
+  <router-view/>
 </template>
 
 <style scoped>
