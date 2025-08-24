@@ -5,15 +5,22 @@
 <Header/>
   <HeroSection />
   <SkillsSection />
+   <SlideShow/>
   <ProjectSection/>
-  <SlideShow/>
+ 
 
 
 
   
   <TestimonialSection/>
 
+
+
+
+  
+
   <ResumeSection class="mt-12" />
+  <Footer/>
 </template>
 
 
@@ -27,6 +34,7 @@ import ResumeSection from '../components/ResumeSection.vue'
 import TestimonialSection from "../components/TestimonialSection.vue"
 import SlideShow from "../components/SlideShow.vue"
 import SkillsSection from '../components/SkillsSection.vue'
+import Footer from "../components/Footer.vue"
 import { ref, computed } from 'vue'
 
 const activeTag = ref('All')

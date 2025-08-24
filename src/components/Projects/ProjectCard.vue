@@ -5,7 +5,8 @@
   >
     <!-- Media -->
     <div class="media relative">
-      <img :src="project.image" :alt="project.title" class="w-full h-full object-cover" />
+      <div class="img-placeholder" ></div>  
+       <!--  <img :src="project.image" :alt="project.title" class="w-full h-full object-cover img-placeholder" />-->
       <button
         class="eye-btn absolute bottom-2 right-2 rounded-full bg-black/70 text-white w-10 h-10 flex items-center justify-center"
         @click.stop="$emit('preview', project)"
@@ -62,4 +63,18 @@ defineProps({
 .btn-primary {
   background:#40196d;color:#fff;padding:.5rem .9rem;border-radius:.5rem;font-weight:600
 }
+
+.img-placeholder {
+  background: linear-gradient(135deg, #4b5563, #6b7280); /* Gray gradient */
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  position: relative;
+  
+
+  width:100%;
+  height: 200px
+}
+
+/* Shimmer Effect */
+
 </style>

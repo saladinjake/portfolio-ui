@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full min-h flex items- bg-white overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+  <section style="background: #eafe7a" class="relative w-full min-h flex items- bg-black overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 text-white">
    
      <!-- Particles as divs -->
      <SlimeIntro/>
@@ -46,7 +46,7 @@ const texts = [
   " Crafting high-quality web experiences with animations, responsiveness, and pixel-perfect designs is my niche.",
   "Vue.js is my playground 🎯",
    "React  is my go to mvp frontend library 🎯",
-   "I also build wit Angular & Next js Fraeworks",
+   "I also build with Angular & Next js Frameworks",
    "For backend technologies still in my learning phase; ",
    "I also thrive in Node js/Express framework as well as Php /Laravel"
 ]

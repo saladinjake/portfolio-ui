@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-light p-6">
+  <section class="bg-light p-6">
     <div class="max-w-6xl mx-auto">
       <!-- Carousel Container -->
       <div class="relative overflow-hidden">
@@ -12,10 +12,13 @@
           <div
             v-for="(project, index) in projects"
             :key="project.id"
-            class="min-w-[80%] md:min-w-[33.333%] lg:min-w-[25%] p-4"
+            class="min-w-33 lg:min-w-25 p-4"
+
+            style="width: 250px"
           >
             <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition overflow-hidden">
-              <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />
+             <div class="img-placeholder" ></div>
+              <!--<img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />-->
               <div class="p-4">
                 <h3 class="font-bold text-lg mb-1">{{ project.title }}</h3>
                 <p class="text-sm text-gray-500">{{ project.category }}</p>
@@ -116,4 +119,31 @@ export default {
 .mx-auto { margin-left: auto; margin-right: auto; }
 .relative{position: relative}
 .overflow-hidden{overflow: hidden}
+
+.min-w-80{
+ width:80%
+} 
+.min-w-33{
+   width: 33%
+} 
+@media (min-width: 780px) {
+ .md\:min-w-33{
+   width: 33%
+} 
+}
+
+.lg\:min-w-25{
+
+}
+
+.img-placeholder {
+  background: linear-gradient(135deg, #4b5563, #6b7280); /* Gray gradient */
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  position: relative;
+  
+
+  width:100%;
+  height: 200px
+}
 </style>
