@@ -1,29 +1,14 @@
 
-
-
 <template>
 <Header/>
   <HeroSection />
   <SkillsSection />
    <SlideShow/>
   <ProjectSection/>
- 
-
-
-
-  
   <TestimonialSection/>
-
-
-
-
-  
-
   <ResumeSection class="mt-12" />
   <Footer/>
 </template>
-
-
 
 <script setup>
 import Header from "../components/Header/index.vue"

@@ -1,11 +1,8 @@
 <template>
   <footer class="bg-white  p-10 m-10 text-lg">
     <div class="max-w-7xl mx-auto px-4">
-      
       <!-- Footer Grid -->
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-        
-        <!-- Column -->
         <div
           v-for="(chunk, colIndex) in projectChunks"
           :key="colIndex"

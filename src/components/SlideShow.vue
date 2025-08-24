@@ -12,11 +12,11 @@
           <div
             v-for="(project, index) in projects"
             :key="project.id"
-            class="min-w-33 lg:min-w-25 p-4"
+            class="min-w-33 md:min-w-25 p-4"
 
-            style="width: 250px"
+           
           >
-            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition overflow-hidden">
+            <div class="bg-white rounded-lg shadow-lg hover:shadow-xl transition overflow-hidden min-w-33 md:min-w-25 p-4"   >
              <div class="img-placeholder" ></div>
               <!--<img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />-->
               <div class="p-4">
@@ -104,7 +104,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 .bg-light { background-color: #f9fafb; }
 .bg-primary { background-color: #3b82f6; }
 .bg-primary-dark { background-color: #2563eb; }
@@ -121,10 +121,10 @@ export default {
 .overflow-hidden{overflow: hidden}
 
 .min-w-80{
- width:80%
+ width:350px
 } 
 .min-w-33{
-   width: 33%
+   width: 300px;
 } 
 @media (min-width: 780px) {
  .md\:min-w-33{
@@ -132,9 +132,6 @@ export default {
 } 
 }
 
-.lg\:min-w-25{
-
-}
 
 .img-placeholder {
   background: linear-gradient(135deg, #4b5563, #6b7280); /* Gray gradient */
@@ -146,4 +143,7 @@ export default {
   width:100%;
   height: 200px
 }
+
+
+
 </style>
