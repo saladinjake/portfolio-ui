@@ -2,12 +2,35 @@
   {
     "id": 1,
     "title": "Vue-Portfolio Website",
-    "category": "Frontend Design",
+    "category": "Vue",
     "image": "/images/project1.jpg",
     "tags":["Vue","css", "Pinia"],
-    "description": "",
+    "description": "A sample portfolio built with Vue js, custom css, Pinia ",
 
     "url": "https://example.com/project1"
+  },
+  {
+    "id": 2,
+    "title": "E-commerce App",
+    "category": "React",
+    "image": "/images/project2.jpg",
+    "url": "https://example.com/project2"
+    ,"description": "A sample ecommerce frontend only application with local storage persistence wth React + Styled component ",
+
+     "tags":["React","React Design Patterns", "shopping cart"]
+
+  },
+
+
+  {
+    "id": 3,
+    "title": "Muitiny - Component Library",
+    "category": "Design Systems",
+    "image": "/images/project1.jpg",
+    "url": "https://example.com/project1"
+       ,"description": "A styled component set of utils and web bulding block components",
+
+     "tags":["React","Storybook", "Hooks", "Styled components"]
   },
   {
     "id": 2,
@@ -15,8 +38,10 @@
     "category": "Mobile App",
     "image": "/images/project2.jpg",
     "url": "https://example.com/project2"
-  },
+       ,"description": "A sample ecommerce frontend only application with local storage persistence  ",
 
+     "tags":["React","React Design Patterns", "shopping cart"]
+  },
 
   {
     "id": 1,
@@ -24,21 +49,9 @@
     "category": "Web Development",
     "image": "/images/project1.jpg",
     "url": "https://example.com/project1"
-  },
-  {
-    "id": 2,
-    "title": "E-commerce App",
-    "category": "Mobile App",
-    "image": "/images/project2.jpg",
-    "url": "https://example.com/project2"
-  },
+       ,"description": "A sample ecommerce frontend only application with local storage persistence  ",
 
-  {
-    "id": 1,
-    "title": "Portfolio Website",
-    "category": "Web Development",
-    "image": "/images/project1.jpg",
-    "url": "https://example.com/project1"
+     "tags":["React","React Design Patterns", "shopping cart"]
   },
   {
     "id": 2,
@@ -46,6 +59,9 @@
     "category": "Mobile App",
     "image": "/images/project2.jpg",
     "url": "https://example.com/project2"
+       ,"description": "A sample ecommerce frontend only application with local storage persistence  ",
+
+     "tags":["React","React Design Patterns", "shopping cart"]
   },
   {
     "id": 1,
@@ -53,6 +69,9 @@
     "category": "Web Development",
     "image": "/images/project1.jpg",
     "url": "https://example.com/project1"
+       ,"description": "A sample ecommerce frontend only application with local storage persistence  ",
+
+     "tags":["React","React Design Patterns", "shopping cart"]
   },
   {
     "id": 2,
@@ -60,6 +79,10 @@
     "category": "Mobile App",
     "image": "/images/project2.jpg",
     "url": "https://example.com/project2"
+
+       ,"description": "A sample ecommerce frontend only application with local storage persistence  ",
+
+     "tags":["React","React Design Patterns", "shopping cart"]
   }
 
 ]

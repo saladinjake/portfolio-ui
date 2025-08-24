@@ -38,13 +38,13 @@
         <!-- Prev / Next Buttons -->
         <button
           @click="prevSlide"
-          class="absolute top-1/2 -translate-y-1/2 left-2 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary hover:text-white"
+          class="absolute p-3 top-1/2 -translate-y-1/2 left-2 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary hover:text-white"
         >
           ‹
         </button>
         <button
           @click="nextSlide"
-          class="absolute top-1/2 -translate-y-1/2 right-2 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary hover:text-white"
+          class="absolute p-3 top-1/2 -translate-y-1/2 right-2 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-primary hover:text-white"
         >
           ›
         </button>
@@ -93,7 +93,8 @@ export default {
         (this.currentIndex - 1 + this.projects.length) % this.projects.length;
     },
     startAutoPlay() {
-      this.autoPlayInterval = setInterval(this.nextSlide, 3000);
+      this.autoPlayInterval = setInterval(this.nextSlide, 10000);
+
     },
     stopAutoPlay() {
       clearInterval(this.autoPlayInterval);
@@ -149,3 +150,4 @@ export default {
 
 
 </style>
+

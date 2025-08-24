@@ -5,7 +5,9 @@
   <SkillsSectionGrid />
    <SlideShow/>
   <ProjectSection/>
+    <Certificates/>
   <TestimonialSection/>
+
   <ResumeSection class="mt-12" />
   <Footer/>
 </template>
@@ -20,6 +22,7 @@ import TestimonialSection from "../components/TestimonialSection.vue"
 import SlideShow from "../components/SlideShow.vue"
 import SkillsSectionGrid from '../components/SkillSectionGrid.vue'
 import SkillsSection from '../components/SkillsSection.vue'
+import Certificates from '../components/Certificates.vue'
 import Footer from "../components/Footer.vue"
 import { ref, computed } from 'vue'
 

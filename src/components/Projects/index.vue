@@ -2,7 +2,7 @@
   <section class="container py-12">
     <div class="">
       <!-- LEFT COLUMN: Tag rail + view switcher -->
-      <div class="flex flex-col gap-5 grid gap-8 grid-cols-2">
+      <div class="flex sm:flex-row flex-col  grid gap-8 grid-cols-2 sm:grid-cols-1">
         <h2 class="text-4xl font-bold">Projects</h2>
 
         <!-- Horizontal tag scroller -->
@@ -134,17 +134,22 @@ onMounted(() => {
 
 /* tag rail */
 .tag-rail{
-  display:flex;gap:.5rem;overflow-x:auto;scroll-behavior:smooth;padding:.25rem .5rem;border:1px solid rgba(0,0,0,.08);border-radius:9999px;background:#fff
+  display:flex;gap:.5rem;overflow-x:auto;
+  scroll-behavior:smooth;padding:.25rem .5rem;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:9999px;background:#fff;
+  overflow-x:hidden
 }
 .tag{
   white-space:nowrap;
-  padding:.45rem .8rem;border-radius:9999px;background:#f3f4f6;color:#40196d;font-weight:600;font-size:.85rem;transition:background .15s
+  padding:.45rem .8rem;border-radius:9999px;
+  background:#f3f4f6;color:#40196d;font-weight:600;font-size:.85rem;transition:background .15s
 }
 .tag:hover{background:#e5e7eb}
 .tag--active{background:#111;color:#40196d}
 
 /* hide scrollbar (webkit + firefox) */
-.no-scrollbar{scrollbar-width:none}
+.no-scrollbar{scrollbar-width:none; }
 .no-scrollbar::-webkit-scrollbar{display:none}
 
 /* arrow buttons */
